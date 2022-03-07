@@ -16,7 +16,7 @@ def star(n):
     star(n//3)                       # n이9일 때
     for i in range(3):               # a*i+k는 행 번호 반복문 돌리면 차례대로 0,1,2,3,4,5,6,7,8 행 선택
         for j in range(3) :          # a*j:a*(j+1)는 0:3, 3:6, 6:9 이렇게 열 선택
-            if i == 1 and j == 1 :   #
+            if i == 1 and j == 1 :   # i == 1, j == 1 일때는 가운데 공백에 해당 
                 continue
             for k in range(a) :
                 Map[a*i+k][a*j:a*(j+1)] = Map[k][:a]
