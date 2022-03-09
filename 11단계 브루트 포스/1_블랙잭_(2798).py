@@ -17,4 +17,3 @@ for i in combinations(number, 3):            # 모든 nc3 경우의 수 구하�
         answer = candidate
 
 print(answer)
-
