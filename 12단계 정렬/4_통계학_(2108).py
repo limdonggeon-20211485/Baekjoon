@@ -8,6 +8,7 @@ number_list = []
 for i in range(N):
     number_list.append(int(input()))
 
+number_list.sort()
 length = len(number_list)
 count_dic = {}
 count_max_dic = {}
@@ -42,7 +43,8 @@ if len(count_max_dic) == 1:
 else:
     for num, key in enumerate(count_max_dic.keys()):
         if num == 1:
-            print(key)                            # 최빈값
+            print(key)
+            break                               # 최빈값
 
 
 
